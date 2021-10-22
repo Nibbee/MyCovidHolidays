@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+button {
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 60px;
+    border: 0;
+    outline: 0;
+}
+
+button span {
+    display: block;
+    background-color: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+}
+
+.kuvat {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.kuvat-text {
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero {
+    background-color: #ffffff;
+    min-height: 100vh;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.index-text {
+    max-width: 600px;
+    margin-top: 10%;
+    margin-left: 8%;
+}
+
+.index-text h1 {
+    font-size: 80px;
+    font-weight: 400;
+}
+
+img {
+    width: 500px;
+    height: auto;
+    margin: 5px;
+}
+
+.image {
+    float: right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 6%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav .logo {
+    width: 160px;
+}
+
+nav .menu-img {
+    width: 7%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+}
