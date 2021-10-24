@@ -110,7 +110,7 @@ nav ul li a {
 
 .wrapper {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%, -50%);
     max-width: 350px;
