@@ -7,6 +7,17 @@
     box-sizing: border-box;
 }
 
+.frame {
+    float: left;
+    width: auto;
+    padding: 5px;
+    border-radius: 1px solid black;
+}
+
+.frame p {
+    margin-top: 10px;
+}
+
 .hero {
     background-color: #ffffff;
     min-height: 100vh;
@@ -42,6 +53,11 @@ img {
     margin-top: 10%;
 }
 
+.imagepos {
+    margin-top: 50px;
+    display: flex;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -75,6 +91,18 @@ nav ul li a {
     font-size: 30px;
 }
 
+.mostviewed {
+    background-color: #ffffff;
+    min-height: 100vh;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    position: relative;
+    max-width: 600px;
+    margin-top: auto;
+    margin-left: 8%;
+    font-size: 150%;
+}
+
 .wrapper{
     position: absolute;
     top: 50%;
@@ -92,7 +120,7 @@ nav ul li a {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #332902;
+    color: #000000;
 }
   
 .wrapper .input_field{
@@ -117,7 +145,7 @@ nav ul li a {
     padding: 10px;
     text-align: center;
     width: 100%;
-    color: #332902;
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: bold;
