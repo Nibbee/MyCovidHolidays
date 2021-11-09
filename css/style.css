@@ -15,7 +15,7 @@ main {
     position: relative;
     padding: 5px 0;
     background-color: rgb(231, 227, 227);
-    border-radius: 30px;
+    border-radius: 10px;
 }
  
 main header {
@@ -237,9 +237,5 @@ nav ul li a {
     section .apartment{
         min-width: 49%;
         margin: 0 10px 0 0;
-    }
-
-    .detail, .button {
-
     }
 }
