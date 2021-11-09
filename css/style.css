@@ -165,18 +165,6 @@ nav ul li a {
     font-size: 30px;
 }
 
-.mostviewed {
-    background-color: #ffffff;
-    min-height: 100vh;
-    width: 100%;
-    color: rgb(0, 0, 0);
-    position: relative;
-    max-width: 600px;
-    margin-top: auto;
-    margin-left: 8%;
-    font-size: 150%;
-}
-
 .wrapper{
     position: absolute;
     top: 50%;
