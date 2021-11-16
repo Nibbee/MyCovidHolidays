@@ -12,20 +12,23 @@
 </head>
 
 <body>
-    <div class="hero">
-        <nav>
-            <img src="images/logo.png" class="menu-img" onclick=window.location.href="index.html">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="apartments.html">Apartments</a></li>
-                <li><a href="about.html">About us</a></li>
-            </ul>
-        </nav>
-
-        <div class="image">
-            <img src="images/etusivu.jpg">
+    
+        <div class="header">
+            <img src="images/logo2.png" class="logo" onclick=window.location.href="index.html">
+            <div class="searchbar">
+                <input type="text" placeholder="Search..">
+              </div>
+            <div class="header-right">
+              <a class="active" href="index.html">Home</a>
+              <a href="apartments.html">Apartments</a>
+              <a href="about.html">About us</a>
+            </div>
         </div>
+
         <div class="index-text">
+            <div class="image">
+                <img src="images/etusivu.jpg">
+            </div>
             <h1>My Covid Holidays</h1>
             <p>Are you bored of spending your holiday at home? Don't go to any public place, hotel,
                 or similiar where you meet people physically - My Covid Holidays is a place
@@ -33,7 +36,7 @@
                 during your holiday.
             </p>
         </div>
-    </div>
+   
 
     <main>
         <header>
@@ -52,13 +55,6 @@
                     <p>485e / night</p>
                     <p>Helsinki, Kamppi</p>
                 </div>
-                <div class="button">
-                    <p class="star">
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                    </p>
             </div>
                 <div class="apartment">
                     <picture><img src="images/frontpage2.jpg"></picture>
@@ -67,13 +63,6 @@
                         <p>410e / night</p>
                         <p>Turku, Kakola</p>
                     </div>
-                    <div class="button">
-                        <p class="star">
-                            <strong>&star;</strong>
-                            <strong>&star;</strong>
-                            <strong>&star;</strong>
-                            <strong>&star;</strong>
-                        </p>
                 </div>
                     <div class="apartment">
                         <picture><img src="images/frontpage3.jpg"></picture>
@@ -81,14 +70,6 @@
                             <b>Tiny and cozy 1-room cabin by the lake</b>
                             <p>Swap</p>
                             <p>Puumala</p>
-                        </div>
-                        <div class="button">
-                            <p class="star">
-                                <strong>&star;</strong>
-                                <strong>&star;</strong>
-                                <strong>&star;</strong>
-                                <strong>&star;</strong>
-                            </p>
                         </div>
                     </div>
                     <div class="apartment">
@@ -98,17 +79,12 @@
                             <p>160e / night or swap</p>
                             <p>Helsinki, Ullanlinna</p>
                         </div>
-                        <div class="button">
-                            <p class="star">
-                                <strong>&star;</strong>
-                                <strong>&star;</strong>
-                                <strong>&star;</strong>
-                                <strong>&star;</strong>
-                            </p>
-                        </div>
                     </div>
         </section>
     </main>
+    <div class="footer">
+        <p>MyCovidHolidays</p>
+    </div>
 </body>
 </html>
 <script src="js/slide.js"></script>
