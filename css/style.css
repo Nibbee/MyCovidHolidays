@@ -10,13 +10,13 @@
 main {
     width: 90%;
     height: 840px;
-    margin: 10px auto;
-    margin-bottom: 10px;
-    margin-left: 5%;
-    position: relative;
+    margin-top: 10%;
+    margin-left: 6%;
+    position: absolute;
     padding: 5px 0;
     background-color: #f1f1f1;
     border-radius: 10px;
+    border: 2px solid black;
 }
  
 main header {
@@ -154,6 +154,7 @@ section .apartment {
     position: relative;
     left: 0;
     transition: 0.5s;
+    border: 2px solid black;
 }
 
 span {
@@ -169,17 +170,34 @@ picture {
     margin-bottom: 20px;
 }
 
+.index {
+    align-items: center;
+    display: flex;
+}
+
 .index-text {
     max-width: 600px;
     margin-top: 10%;
     margin-left: 8%;
     font-size: 150%;
-    border-radius: 5px solid black;
 }
 
 .index-text h1 {
     font-size: 70px;
     font-weight: 400;
+}
+
+.index p {
+    margin-bottom: 5%;
+}
+
+.index img {
+    width: 35%;
+    height: 35%;
+    margin-left: 10%;
+    margin-top: 8%;
+    border: 5px solid black;
+    justify-content: center;
 }
 
 img {
