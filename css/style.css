@@ -212,11 +212,6 @@ picture {
     font-size: 150%;
 }
 
-.index-text h1 {
-    font-size: 70px;
-    font-weight: 400;
-}
-
 .index p {
     margin-bottom: 5%;
 }
@@ -416,7 +411,7 @@ button[type=reset] {
 	border-radius: 5px;
     font-weight: lighter;
 	color: #FFFFFF;
-    background-color: #4eb5f1;
+    background-color: dodgerblue;
     text-align: center;
 }
 
