@@ -1,0 +1,100 @@
+<!doctype HTML!>
+
+<html>
+
+<head>
+    <title>Apartment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-witdh, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" type="images" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <div class="header">
+        <img src="images/logo2.png" class="logo" onclick=window.location.href="index.html">
+        <div class="header-right">
+          <a href="index.html">Home</a>
+          <a class="active" href="apartments.html">Apartments</a>
+          <a href="about.html">About us</a>
+        </div>
+    </div>
+
+    <Body>
+<h3>4 bedroom top floor aparment in central Helsinki</h3>
+<div class="intro">
+    <img src="images/frontpage1.jpg" class="picture3">
+    <div class="row">
+        <div class="column">
+          <img src="images\type.png" class="picture2">
+        </div>
+        <div class="column2">
+        <p>A Flat</p>
+        </div>
+        <div class="column">
+          <img src="images\sqauarem.png" class="picture2">
+        </div>
+        <div class="column2">
+            <p>128m<sup>2</sup></p>
+            </div>
+        <div class="column">
+          <img src="images\location.png" class="picture2" style="width:80%">
+        </div>
+        <div class="column2">
+            <p>Helsinki</p>
+            </div>
+      </div>
+
+      <div class="price">
+        <div class="button2">
+            <a href="">Check Prize</a>
+        </div> 
+        <h4>Renting price:</h4>
+        <p>485€ / Night</p>
+    </div>
+
+        <div class="apartmentinfo">
+      <p>Top floor big 4 bedroom apartment with beautiful view to Helsinki centrum. Apartmen has big glassed-in balcony with great view, modern kitchen and sauna. 
+        Apartment has underground garage with one car slot.</p>    
+    </div>
+
+
+    <div class="right-contact2">
+        <div class="content2">
+            <div id="error-message"></div>
+            <form id="apartment-contact" onsubmit="return validation();">
+                <h4>Contact Owner</h4>
+                <p>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="Name" placeholder="Your name...">
+                </p>
+                <p>
+                    <label for="phone">Phone number</label>
+                    <input type="text" name="phone" id="phone" placeholder="Phone number..." maxlength="13">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Email address...">
+                </p>
+                <p>
+                    <label for="message">Your message</label>
+                    <textarea type="type" name="message" id="message"
+                        placeholder="Write your message here..."></textarea>
+                </p>
+
+                <button type="submit" form="apartment-form" value="Send">Send</button>
+                <button type="reset" form="contact-form" value="Clear">Clear</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>MyCovidHolidays</p>
+</div>
+
+</Body>
+
+
+
+</html>
