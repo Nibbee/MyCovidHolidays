@@ -359,9 +359,9 @@ div.left-contact {
     margin-left: 10px;
     padding: 20px 0 20px 0;
     height: auto;
-    width: 80%;
-    max-width: 100%;
-    max-height: auto;
+    width: auto;
+    max-width: 60%;
+    max-height: 60%;
 }
 
 div.right-contact {
@@ -402,6 +402,14 @@ form textarea:focus {
 	-webkit-box-shadow: 0 0 8px #88D5E9;
 	box-shadow: 0 0 8px #88D5E9;
 	border: 1px solid #88D5E9;
+}
+
+#validationinfo {
+    font-size: small;
+    font-family: 'Merriweather';
+    font-weight: bolder;
+    color: red;
+
 }
 
 button[type=submit],
