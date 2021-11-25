@@ -65,23 +65,26 @@
         <div class="right-contact">
             <div class="content">
                 <div id="error-message"></div>
-                <form id="contact-form" onsubmit="return validation();">
+                <form id="contact-form" action=" " novalidate>
+
+                    <p id="validationinfo"></p>
+
                     <p>
                         <label for="name">Name</label>
-                        <input id="name" type="text" name="Name" placeholder="Your name...">
+                        <input id="name" type="text" name="Name" placeholder="Your name..." required>
                     </p>
                     <p>
                         <label for="phone">Phone number</label>
-                        <input type="text" name="phone" id="phone" placeholder="Phone number..." maxlength="13">
+                        <input type="text" name="phone" id="phone" placeholder="Phone number..." maxlength="13" required>
                     </p>
                     <p>
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="Email address...">
+                        <input type="text" name="email" id="email" placeholder="Email address..." required>
                     </p>
                     <p>
                         <label for="message">Your message</label>
                         <textarea type="type" name="message" id="message"
-                            placeholder="Write your message here..."></textarea>
+                            placeholder="Write your message here..." required></textarea>
                     </p>
 
                     <button type="submit" form="contact-form" value="Send">Send</button>
