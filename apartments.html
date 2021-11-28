@@ -7,6 +7,7 @@
         <meta name="viewport" content="width-device-witdh, initial-scale=1, user-scalable=no">
         <link rel="shortcut icon" type="images" href="images/logo.png">        
         <link rel="stylesheet" href="css/style.css">
+        
     </head>
 
     <body>
@@ -18,16 +19,101 @@
               <a href="about.html">About us</a>
             </div>
         </div>
-        <p class="searchbar">
-            <form role="search" id="form_search">
-                <input type="search" id="query" name="q"
-                 placeholder="Search..."
-                 aria-label="Search through site content">
-                <button>
-                  <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-                </button>
-            </form>
-        </p>
+        <div id="title">
+            <h1>Search for apartments</h1>
+            <h2>Choose from the most advantageus offers</h2>
+        </div>
+        <div id="form_div">
+            <form id="form_search">
+                <input type="text" id="keyword"value="Enter a keyword">
+                <input type="submit" id="search_button"value="Search">
+                <p id="filter"> Filter settings</p>
+                <div style="width:200px;">
+                    <select class="custom-select1" >
+                      <option value="0">Rent</option>
+                      <option value="1">Swap</option>
+                      <option value="2">Any</option>
+                    </select>
+                </div>
+                <div  style="width:200px;">
+                    <select class="custom-select2">
+                      <option value="0">Flat</option>
+                      <option value="1">Cabin</option>
+                      <option value="2">Apartment</option>
+                      <option value="3">Any</option>
+                    </select>
+                </div>
+                <div style="width:200px;">
+                    <select class="custom-select3">
+                      <option value="0">Select location</option>
+                      <option value="1">Helsinki</option>
+                      <option value="2">Turku</option>
+                      <option value="3">Tampere</option>
+                      <option value="4">Rovaniemi</option>
+                      <option value="5">Kotka</option>
+                      <option value="6">Hyvinkää</option>
+                      <option value="7">Oulu</option>
+                      <option value="8">Hanko</option>
+                      <option value="9">Any</option>
+                    </select>
+                </div>
+                <div  style="width:200px;">
+                    <select class="custom-select4">
+                      <option value="0">Most expensive</option>
+                      <option value="1">Least expensive</option>
+                      <option value="2">Most popular</option>
+                      <option value="3">Newest</option>
+                      <option value="4">Oldest</option>
+                    </select>
+                </div>
+                <input type="range" min="0" max="10,000" value="5000" class="slider" id="form_slider">
+                <h10>0€</h10><h11>10 000€</h11>
+                
+        </div>
+        <main>
+            <header>
+                <h1>Most viewed apartments by others today</h1>
+                <p>
+                    <span>&#171;</span>
+                    <span>&#187;</span>
+                </p>
+            </header>
+    
+            <section>
+                <div class="apartment">
+                    <picture><img src="images/frontpage1.jpg" onclick=window.location.href="apartment_page.html"></picture>
+                    <div class="details">
+                        <b>4 bedroom top floor aparment in central Helsinki</b>
+                        <p>485e / night</p>
+                        <p>Helsinki, Kamppi</p>
+                    </div>
+                </div>
+                    <div class="apartment">
+                        <picture><img src="images/frontpage2.jpg" onclick=window.location.href=""></picture>
+                        <div class="details">
+                            <b>Two-room apartment at historical Kakola</b>
+                            <p>410e / night</p>
+                            <p>Turku, Kakola</p>
+                        </div>
+                    </div>
+                        <div class="apartment">
+                            <picture><img src="images/frontpage3.jpg" onclick=window.location.href=""></picture>
+                            <div class="details">
+                                <b>Tiny and cozy 1-room cabin by the lake</b>
+                                <p>Swap</p>
+                                <p>Puumala</p>
+                            </div>
+                        </div>
+                        <div class="apartment">
+                            <picture><img src="images/frontpage4.jpg" onclick=window.location.href=""></picture>
+                            <div class="details">
+                                <b>2-room apartment in well-known area in Helsinki</b>
+                                <p>160e / night or swap</p>
+                                <p>Helsinki, Ullanlinna</p>
+                            </div>
+                        </div>
+            </section>
+        </main>
         <div class="footer">
             <p>MyCovidHolidays</p>
         </div>
