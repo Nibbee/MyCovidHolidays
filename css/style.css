@@ -277,16 +277,17 @@ input {
 #form_div {
     position: relative;
     height: 400px;
+    
     align-items: center;
     background-color: #F3F3FA;
 }   
 
 #keyword{
     position: absolute;
-    width: 378px;
+    width: 20%;
     height: 59.05px;
-    left: 648px;
-    top: 74.18px;
+    left: 30%;
+    top: 20%;
 
     background: #FFFFFF;
     border: 1px solid #DDDDDD;
@@ -296,10 +297,10 @@ input {
 }
 #search_button{
     position: absolute;
-    width: 150px;
+    width: 8%;
     height: 50.05px;
-    left: 1042px;
-    top: 72.18px;
+    left: 55%;
+    top: 20%;
     background: #1C3988;
     border-radius: 4px;
     text-align: center;
@@ -330,39 +331,40 @@ select{
 .custom-select1{
     position: absolute;
     display: block;
-    width: 262px;
-    height: 48px;
-    left: 384px;
-    top: 203px;
+    width: 14%;
+    height: 12%;
+    left: 20%;
+    top: 50.5%;
 }
 
 
 .custom-select2{
     position: absolute;
-    width: 262px;
-    height: 48px;
-    left: 670px;
-    top: 203px;
+    width: 14%;
+    height: 12%;
+    left: 35%;
+    top: 50.5%;
 }
 
 .custom-select3{
     position: absolute;
-    width: 262px;
-    height: 48px;
-    left: 956px;
-    top: 203px;
+    width: 14%;
+    height: 12%;
+    left: 50%;
+    top: 50.5%;
 }
 
 .custom-select4{
     position: absolute;
-    width: 262px;
-    height: 48px;
-    left: 1233px;
-    top: 203px;
+    width: 14%;
+    height: 12%;
+    left: 65%;
+    top: 50.5%;
 }
 .slider {
     position: absolute;
-    width: 550px;
+    /*width: 550px;*/
+    width: 29%;
     height: 1px;
     left: 34.4%;
     top: 70%;
