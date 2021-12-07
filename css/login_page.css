@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Merriweather';
+    color: #091638;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 1px 200px;
+    padding-top: 5px;
+}
+  
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+  
+.header-right {
+    float: right;
+}
+
+.header .logo {
+    width: 150px;
+    float: left;
+    cursor: pointer;
+    padding-bottom: 5px;
+
+}
+.singin-form {
+    max-width: 350px;
+    min-height: 500px;
+    margin: 80px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px dodgerblue, -3px -3px 3px 3px dodgerblue;
+}
+
+.logo img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+}
+
+.singin-form .email {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: black;
+}
+
+.singin-form .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    padding: 10px 15px 10px 10px;
+}
+
+.singin-form .form-field {
+    margin-top: 15px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 8px 8px 8px rgb(200, 200, 200), inset -8px -8px 8px rgb(200, 200, 200);
+}
+
+.singin-form .btn {
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+    background-color: dodgerblue;
+    color: #fff;
+    letter-spacing: 1.3px;
+}
+
+.singin-form .btn:hover {
+    background-color: #039BE5;
+    cursor: pointer;
+}
+
+.singin-form a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #03A9F4;
+}
+
+.singin-form a:hover {
+    color: #039BE5;
+}
