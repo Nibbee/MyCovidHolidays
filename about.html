@@ -61,31 +61,30 @@
 
         <div class="right-contact">
             <div class="content">
-                <div id="error-message"></div>
-                <form id="contact-form" action=" " novalidate>
-
-                    <p id="validationinfo"></p>
-
-                    <p>
+                <form action="" id="contact-form" onsubmit="return validate();">
+                    <div id="error_message"></div>
+                    <div class="input_field">
                         <label for="name">Name</label>
-                        <input id="name" type="text" name="Name" placeholder="Your name..." required>
-                    </p>
-                    <p>
+                        <input id="name" type="text" name="Name" placeholder="Your name...">
+                    </div>
+                    <div class="input_field">
                         <label for="phone">Phone number</label>
-                        <input type="text" name="phone" id="phone" placeholder="Phone number..." maxlength="13" required>
-                    </p>
-                    <p>
+                        <input type="text" name="phone" id="phone" placeholder="Phone number..." maxlength="13">
+                    </div>
+                    <div class="input_field">
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="Email address..." required>
-                    </p>
-                    <p>
+                        <input type="text" name="email" id="email" placeholder="Email address...">
+                    </div>
+                    <div class="input_field">
                         <label for="message">Your message</label>
                         <textarea type="type" name="message" id="message"
-                            placeholder="Write your message here..." required></textarea>
-                    </p>
+                            placeholder="Write your message here..."></textarea>
+                    </div>
 
-                    <button type="submit" form="contact-form" value="Send">Send</button>
-                    <button type="reset" form="contact-form" value="Clear">Clear</button>
+                    <dic class="button">
+                        <span><button type="submit" form="contact-form" value="Send">Send</button>
+                            <button type="reset" form="contact-form" value="Clear">Clear</button></span>
+                    </dic>
                 </form>
 
             </div>
