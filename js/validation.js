@@ -1,39 +1,32 @@
-const isRequiredValueMissing = (fieldObject) => {
-
-    if (fieldObject.hasAttribute('required') && fieldObject.value == '') {
-        return true;
-    }
-    return false;
-};
-
-const isEmailAddressInvalid = (fieldObject) => {
-    const re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-    let isInvalid = !re.test(String(fieldObject.value).toLocaleLowerCase());
-
-    return isInvalid;
-}
-
-
-window.addEventListener('load', () => {
+function validate(){
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    var error_message = document.getElementById("error_message");
     
-    const contactForm = document.querySelector('#contact-form');
-    document.querySelector('#validationinfo').innerHTML = " ";
-
-    contactForm.addEventListener('submit', (anEvent) => {
-        
-        let errorsMessage = ' ';
-
-        if (isRequiredValueMissing(contactForm.name)|| isRequiredValueMissing(contactForm.phone)
-        || isRequiredValueMissing(contactForm.email)||isRequiredValueMissing(contactForm.message)){
-            errorsMessage += 'You must fill in all the fields. <br>';
-        } else if (isEmailAddressInvalid(contactForm.email)) {
-            errorsMessage += 'You must give a valid email address. <br>';
-        }
-
-        if (errorsMessage.length > 0) {
-            document.querySelector('#validationinfo').innerHTML = errorsMessage;
-            anEvent.preventDefault();
-        }
-    })
-})
+    
+    var text;
+    if(name.length <= 1){
+      text = "Please enter valid name";
+      error_message.innerHTML = text;
+      return false;
+    }
+    if(isNaN(phone) || phone.length != 10){
+      text = "Please enter valid phone number";
+      error_message.innerHTML = text;
+      return false;
+    }
+    if(email.indexOf("@") == -1 || email.indexOf(".")== -1 || email.length < 6 ){
+      text = "Please enter valid email";
+      error_message.innerHTML = text;
+      return false;
+    }
+    if(message.length <= 0){
+      text = "Please enter your message";
+      error_message.innerHTML = text;
+      return false;
+    }
+    alert("Form was submitted successfully!");
+    return true;
+  }
