@@ -522,12 +522,9 @@ form textarea:focus {
 	border: 1px solid #88D5E9;
 }
 
-#validationinfo {
+#error_message {
     font-size: small;
-    font-family: 'Merriweather';
-    font-weight: bolder;
     color: red;
-
 }
 
 button[type=submit],
